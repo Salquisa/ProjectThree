@@ -60,11 +60,11 @@
             </objects>
             <point key="canvasLocation" x="-641" y="69"/>
         </scene>
-        <!--Item 1-->
+        <!--Eats-->
         <scene sceneID="POT-rw-x92">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xOo-ft-VOl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="GO8-ML-rjA"/>
+                    <tabBarItem key="tabBarItem" title="Eats" id="GO8-ML-rjA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ayH-ue-hFG">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -79,11 +79,11 @@
             </objects>
             <point key="canvasLocation" x="369.375" y="-269.36619718309862"/>
         </scene>
-        <!--Item 2-->
+        <!--Maps-->
         <scene sceneID="XSr-ZS-HHc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eQp-7b-8up" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="htA-1q-u2j"/>
+                    <tabBarItem key="tabBarItem" title="Maps" id="htA-1q-u2j"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dTM-hm-bmb">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
