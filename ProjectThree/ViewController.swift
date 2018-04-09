@@ -13,14 +13,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var menuTitleOne: UINavigationItem!
     
     @IBOutlet var tableView: UITableView!
-    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Chilis", "AppleBee", "Johnny Rockets"]
+    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Chilis", "AppleBee", "Johnny Rockets", "Sushi Bay"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         
-        self.menuTitleOne.title = "List Of Places To Eat"
+        self.menuTitleOne.title = "My Go-To Places To Eat"
     }
 
     override func didReceiveMemoryWarning() {
