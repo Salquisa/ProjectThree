@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var menuTitleOne: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.menuTitleOne.title = "List Of Places To Eat"
     }
 
     override func didReceiveMemoryWarning() {

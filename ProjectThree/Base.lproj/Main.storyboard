@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="dLc-f3-aJQ">
             <objects>
-                <viewController id="OFY-tn-il8" sceneMemberID="viewController">
+                <viewController id="OFY-tn-il8" customClass="secondViewController" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Er-BR-kTY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,6 +21,9 @@
                         <viewLayoutGuide key="safeArea" id="JsO-W7-GJP"/>
                     </view>
                     <navigationItem key="navigationItem" id="bhu-st-PA5"/>
+                    <connections>
+                        <outlet property="menuTitleTwo" destination="bhu-st-PA5" id="1HR-ii-JmF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9Y-yB-Phm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,7 +32,7 @@
         <!--View Controller-->
         <scene sceneID="sBJ-tr-ITx">
             <objects>
-                <viewController id="2X8-As-4EQ" sceneMemberID="viewController">
+                <viewController id="2X8-As-4EQ" customClass="ViewController" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c6H-nP-yA7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +40,9 @@
                         <viewLayoutGuide key="safeArea" id="oJq-iH-FAc"/>
                     </view>
                     <navigationItem key="navigationItem" id="W8h-dc-cxO"/>
+                    <connections>
+                        <outlet property="menuTitleOne" destination="W8h-dc-cxO" id="iaf-lT-lx3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hK-kl-DAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
