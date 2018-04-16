@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         
-        self.menuTitleOne.title = "My Go-To Places To Eat"
+        self.menuTitleOne.title = "What To Eat?"
     }
 
     override func didReceiveMemoryWarning() {
