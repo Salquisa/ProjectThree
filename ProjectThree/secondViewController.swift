@@ -30,7 +30,7 @@ class secondViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
         
-        let restaurantOne = Restaurant(title: "California Pizza Kitchen", type: "California Pizza Kitchen", coordinate: CLLocationCoordinate2D(latitude: 21.333612, longitude: -158.051134))
+        let restaurantOne = Restaurant(title: "California Pizza Kitchen", type: "California Pizza Kitchen", coordinate: CLLocationCoordinate2D(latitude: 21.453862, longitude: -158.006604))
         mapView.addAnnotation(restaurantOne)
         
         let restaurantTwo = Restaurant(title: "Pieology", type: "Pieology", coordinate: CLLocationCoordinate2D(latitude: 21.385116, longitude: -157.941679))
