@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class secondViewController: UIViewController {
 
     @IBOutlet var menuTitleTwo: UINavigationItem!
     
+    @IBOutlet var mapView: MKMapView!
+    
+    let initialLocation = CLLocation(latitude: 21.401048, longitude: -158.002690)
+    let regionRadius: CLLocationDistance = 17000
+    
     override func viewDidLoad() {
+        
+        func centerMapOnLocation(location: CLLocation) {
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius,regionRadius)
+            mapView.setRegion(coordinateRegion, animated: true)
+        }
+        
         super.viewDidLoad()
+        
+        centerMapOnLocation(location: initialLocation)
 
+        
         // Do any additional setup after loading the view
         self.menuTitleTwo.title = "Location of Restaurants"
     }

@@ -17,17 +17,24 @@
                     <view key="view" contentMode="scaleToFill" id="2Er-BR-kTY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sIn-m3-Apb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="463"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="JsO-W7-GJP"/>
                     </view>
                     <navigationItem key="navigationItem" id="bhu-st-PA5"/>
                     <connections>
+                        <outlet property="mapView" destination="sIn-m3-Apb" id="xW5-pw-Mz3"/>
                         <outlet property="menuTitleTwo" destination="bhu-st-PA5" id="1HR-ii-JmF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9Y-yB-Phm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="407"/>
+            <point key="canvasLocation" x="1140" y="406.6901408450704"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sBJ-tr-ITx">
