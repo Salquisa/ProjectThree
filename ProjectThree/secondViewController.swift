@@ -16,7 +16,7 @@ class secondViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     
-    let initialLocation = CLLocation(latitude: 21.401048, longitude: -158.002690)
+    let initialLocation = CLLocation(latitude: 21.391043, longitude: -158.017300)
     let regionRadius: CLLocationDistance = 17000
     
     override func viewDidLoad() {
