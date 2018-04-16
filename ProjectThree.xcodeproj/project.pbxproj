@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F75B2C120853A35005E1368 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F75B2C020853A35005E1368 /* Restaurant.swift */; };
 		7FC53A6B207C076100662830 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC53A6A207C076100662830 /* secondViewController.swift */; };
 		7FD7A29B2072CD5400029D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7A29A2072CD5400029D60 /* AppDelegate.swift */; };
 		7FD7A29D2072CD5400029D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7A29C2072CD5400029D60 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F75B2C020853A35005E1368 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		7FC53A6A207C076100662830 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		7FD7A2972072CD5400029D60 /* ProjectThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD7A29A2072CD5400029D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		7FD7A28E2072CD5400029D60 = {
 			isa = PBXGroup;
 			children = (
+				7F75B2C020853A35005E1368 /* Restaurant.swift */,
 				7FD7A2992072CD5400029D60 /* ProjectThree */,
 				7FD7A2982072CD5400029D60 /* Products */,
 			);
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F75B2C120853A35005E1368 /* Restaurant.swift in Sources */,
 				7FD7A29D2072CD5400029D60 /* ViewController.swift in Sources */,
 				7FC53A6B207C076100662830 /* secondViewController.swift in Sources */,
 				7FD7A29B2072CD5400029D60 /* AppDelegate.swift in Sources */,

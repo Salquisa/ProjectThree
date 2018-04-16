@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var menuTitleOne: UINavigationItem!
     
     @IBOutlet var tableView: UITableView!
-    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Chilis", "AppleBee", "Johnny Rockets", "Sushi Bay"]
+    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Panda Express", "AppleBee", "Johnny Rockets", "Sushi Bay"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

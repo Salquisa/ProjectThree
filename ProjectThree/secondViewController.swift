@@ -29,6 +29,9 @@ class secondViewController: UIViewController {
         super.viewDidLoad()
         
         centerMapOnLocation(location: initialLocation)
+        
+        let restaurantOne = Restaurant(title: "California Pizza Kitchen", type: "California Pizza Kitchen", coordinate: CLLocationCoordinate2D(latitude: 21.333612, longitude: -158.051134))
+        mapView.addAnnotation(restaurantOne)
 
         
         // Do any additional setup after loading the view
