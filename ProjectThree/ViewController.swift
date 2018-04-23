@@ -15,12 +15,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var tableView: UITableView!
     var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Panda Express", "AppleBee", "Johnny Rockets", "Sushi Bay"]
     
+    var restaurantImageData = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         
         self.menuTitleOne.title = "What To Eat?"
+        
+        let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path!)
+        
+        restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,13 +45,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
             let text = myRestaurantsArray[indexPath.row]
             cell.textLabel?.text=text
             return cell
         }
+    
+    //add another table view function called, tableView(_:didSelectRowAt:)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+        
     }
 
 
 
 
+}
