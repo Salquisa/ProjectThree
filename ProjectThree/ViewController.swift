@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet var menuTitleOne: UINavigationItem!
     
     @IBOutlet var tableView: UITableView!
-    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Panda Express", "AppleBee", "Johnny Rockets", "Sushi Bay"]
+    var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Panda Express", "AppleBee's", "Johnny Rockets", "Sushi Bay"]
     
     var restaurantImageData = [String]()
     var restaurantDescriptionData = [String]()
@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         
-        self.menuTitleOne.title = "What To Eat?"
+        self.menuTitleOne.title = "My Favorite Restaurants on Oahu"
         
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
