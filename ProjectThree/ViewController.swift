@@ -35,6 +35,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
         func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,8 +63,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
     }
-
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mySegue"
+        {
+            let s1 = segue.destination as! detailViewController
+            let imageIndex = tableView.indexPathForSelectedRow?.row
+            s1.imagePass = restaurantImageData[imageIndex!]
+        }
+        
+    }
 
 
 }
+

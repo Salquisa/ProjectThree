@@ -56,6 +56,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xWH-hb-B7U" kind="show" identifier="mySegue" id="MsB-aH-TA2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -77,20 +80,29 @@
             </objects>
             <point key="canvasLocation" x="1140" y="-269.36619718309862"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="ucg-HO-7XV">
             <objects>
-                <viewController id="xWH-hb-B7U" sceneMemberID="viewController">
+                <viewController id="xWH-hb-B7U" customClass="detailViewController" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="enz-lc-Waw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXT-rU-YUG">
+                                <rect key="frame" x="16" y="89" width="288" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="0yy-sb-xkF"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="XXT-rU-YUG" id="QaQ-gH-eMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gd-H2-SMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="-268"/>
+            <point key="canvasLocation" x="1863.75" y="-268.3098591549296"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gH9-Iv-RaQ">

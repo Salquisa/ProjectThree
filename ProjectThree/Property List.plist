@@ -5,6 +5,11 @@
 	<key>restaurantImages</key>
 	<array>
 		<string>cpkMililani</string>
+		<string>pieologyPearlridge</string>
+		<string>pandaExpress</string>
+		<string>applebees</string>
+		<string>johnnyRocketsPearlHighlands</string>
+		<string>sushiBay</string>
 	</array>
 </dict>
 </plist>
