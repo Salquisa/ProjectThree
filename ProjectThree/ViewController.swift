@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var myRestaurantsArray = ["California Pizza Kitchen", "Pieology", "Panda Express", "AppleBee", "Johnny Rockets", "Sushi Bay"]
     
     var restaurantImageData = [String]()
+    var restaurantDescriptionData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let dict = NSDictionary(contentsOfFile: path!)
         
         restaurantImageData = dict!.object(forKey:"restaurantImages") as! [String]
+        
+        restaurantDescriptionData = dict!.object(forKey:"restaurantDescription") as! [String]
         
         
     }
@@ -70,6 +73,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let s1 = segue.destination as! detailViewController
             let imageIndex = tableView.indexPathForSelectedRow?.row
             s1.imagePass = restaurantImageData[imageIndex!]
+            
+            s1.textPass = restaurantDescriptionData[imageIndex!]
         }
         
     }
