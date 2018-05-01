@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         self.tableView.dataSource = self
         
-        self.menuTitleOne.title = "My Favorite Restaurants on Oahu"
+        self.menuTitleOne.title = "Oahu Eats"
         
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
@@ -80,7 +80,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Restaurants To Eat Out At"}
+        return "My Restaurants On Oahu"}
 
 
 }
