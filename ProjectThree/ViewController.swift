@@ -84,7 +84,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "My Restaurants On Oahu"}
+        return "My Restaurants On Oʻahu"}
 
 
 }
