@@ -12,9 +12,11 @@ class detailViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var textView: UITextView!
+    @IBOutlet var titleView: UINavigationItem!
     
     var imagePass: String?
     var textPass: String?
+    var titlePass: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,10 @@ class detailViewController: UIViewController {
         }
         if let textName = textPass {
             textView.text = textName
+        }
+        
+        if let titleName = titlePass {
+            titleView.title = titleName
         }
         
         self.view.backgroundColor = UIColor.darkGray

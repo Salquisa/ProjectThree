@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var restaurantImageData = [String]()
     var restaurantDescriptionData = [String]()
+    var restaurantNamesData = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         restaurantDescriptionData = dict!.object(forKey:"restaurantDescription") as! [String]
         
+        restaurantNamesData = dict!.object(forKey: "restaurantNames") as! [String]
         
     }
 
@@ -75,6 +77,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             s1.imagePass = restaurantImageData[imageIndex!]
             
             s1.textPass = restaurantDescriptionData[imageIndex!]
+            
+            s1.titlePass = restaurantNamesData[imageIndex!]
         }
         
     }

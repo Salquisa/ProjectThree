@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>restaurantNames</key>
+	<array>
+		<string>California Pizza Kitchen</string>
+		<string>Pieology</string>
+		<string>Panda Express</string>
+		<string>Applebee&apos;s</string>
+		<string>Johnny Rockets</string>
+		<string>Sushi Bay</string>
+	</array>
 	<key>restaurantDescription</key>
 	<array>
 		<string>We opened our first restaurant In Beverly Hills in 1985. Former federal prosecutors Rick Rosenfield and Larry Flax combined their passion for food with fresh high-quality ingredients to create innovative, hearth-baked pizzas such as The Original BBQ Chicken, Thai Chicken, and Jamaican Jerk Chicken, cooked in an open kitchen. The restaurant gave California a place in the pizza pantheon alongside Chicago and New York. Our California twist on global flavors resonated with guests, and almost immediately, CPK became a bustling spot for business and family gatherings.</string>

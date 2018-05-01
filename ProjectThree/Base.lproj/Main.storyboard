@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gjE-aF-3bQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gjE-aF-3bQ">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -80,7 +80,7 @@
             </objects>
             <point key="canvasLocation" x="1140" y="-269.36619718309862"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="ucg-HO-7XV">
             <objects>
                 <viewController id="xWH-hb-B7U" customClass="detailViewController" customModule="ProjectThree" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,9 +104,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="0yy-sb-xkF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="rqb-9P-Q1T"/>
                     <connections>
                         <outlet property="imageView" destination="XXT-rU-YUG" id="QaQ-gH-eMh"/>
                         <outlet property="textView" destination="6vN-It-2db" id="ImR-RC-fcd"/>
+                        <outlet property="titleView" destination="rqb-9P-Q1T" id="Hee-FG-SfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gd-H2-SMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
